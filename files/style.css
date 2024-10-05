@@ -231,7 +231,7 @@ li {
 .banner {
   position: relative;
   height: 100vh; /* Adjust height as needed */
-  background-image: url("/img/second.webp"); /* Add your image URL */
+  background-image: url("../img/second.webp"); /* Add your image URL */
   background-size: cover;
   background-position: center;
   padding: 20px; /* Adds padding to prevent overflow on smaller screens */
