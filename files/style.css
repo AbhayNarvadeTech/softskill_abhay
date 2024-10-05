@@ -1,0 +1,325 @@
+* {
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  /* Adjusted for faster transitions */
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.navbar {
+  background-color: #e9ecef;
+}
+
+.navbar a {
+  color: #212529;
+}
+
+.navbar li :hover {
+  background-color: seagreen;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar li .active {
+  background-color: seagreen;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.navbar-brand img {
+  width: 140px;
+  height: 75px !important;
+  object-fit: contain;
+}
+
+.navbar-toggler {
+  border-color: seagreen; /* Change the border color to SeaGreen */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='seagreen' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.hero-section {
+  text-align: center;
+  overflow: hidden;
+  /* Prevents overflow on smaller screens */
+}
+
+/* Carousel styles */
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the caption */
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.features,
+.plans-section,
+.testimonials {
+  padding: 50px 20px;
+}
+
+.features div,
+.testimonial-card,
+.plan-card {
+  text-align: center;
+  color: #212529;
+}
+
+.testimonial-card,
+.plan-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plans-section .plan-card button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #e9ecef;
+  padding: 20px 0;
+  text-align: center;
+  color: #212529;
+}
+
+.footer a {
+  color: #007bff;
+  margin: 0 15px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./img/Flat-Preloaders.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  /* Ensure it stays on top of everything */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+    /* Adjusted size for mobile */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    /* Smaller paragraph font size for mobile */
+  }
+
+  .indeximg {
+    width: 100%;
+    /* Full width on smaller screens */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+    /* Even smaller for extra small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    /* Even smaller for extra small screens */
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+  /* Hide controls for simplicity */
+}
+
+.heading h1 {
+  color: rgb(101, 143, 101);
+}
+
+li {
+  list-style: none;
+}
+
+#Leadership .col .card {
+  background-color: #3c3e41;
+  color: #e9ecef;
+}
+
+#Leadership .col .card a {
+  text-decoration: none !important;
+  color: #e9ecef;
+}
+#cardform {
+  position: relative;
+  transform: translateY(-50px);
+}
+
+#cardform a {
+  text-decoration: none;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.binded-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.binded-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.binded-item.active {
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  height: 100vh; /* Adjust height as needed */
+  background-image: url("/img/second.webp"); /* Add your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Adds padding to prevent overflow on smaller screens */
+  overflow: hidden; /* Prevents content from spilling out of the container */
+}
+
+.text-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -25vh);
+  text-align: center;
+  max-width: 90%;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner h5 {
+  font-size: 1.5rem;
+  margin-top: 10px; /* Adds space between h1 and h5 */
+}
+
+@media (max-width: 768px) {
+  .text-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -7vh);
+    text-align: center;
+    max-width: 90%;
+    color: white;
+  }
+}
+@media (max-width: 375px) {
+  .banner {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    background-image: url("/img/second.webp"); /* Add your image URL */
+    background-size: cover;
+    background-position: -250px;
+    padding: 20px; /* Adds padding to prevent overflow on smaller screens */
+    overflow: hidden; /* Prevents content from spilling out of the container */
+  }
+}
+
+#whyshould a {
+  text-decoration: none;
+}
+
+#testimonialCarousel {
+  height: fit-content;
+}
+.carousel-item {
+    height: 30rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  padding: 10px; /* Optional: Add padding for a larger clickable area */
+  bottom: 50%; /* Position vertically center */
+  transform: translateY(21rem); /* Center vertically */
+  z-index: 10; /* Ensure controls are above other elements */
+  height: fit-content;
+}
+
+body{margin-top:20px;}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.sub-info{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #004975;
+}
+
+.display-30 {
+    font-size: 0.9rem;
+}
+
+.rounded-circle {
+    font-size: xx-large;
+    
+}
