@@ -7,7 +7,7 @@
 /* General body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa00;
   color: #212529;
 }
 
@@ -322,4 +322,56 @@ img {
 .rounded-circle {
     font-size: xx-large;
     
+}
+
+#about-2 {
+  margin-top: 120px; /* Creates space after the navbar */
+  margin-bottom: 50px; /* Adds some space before the next section */
+  position: relative;
+  top: 5rem;
+}
+
+#Leadership {
+  margin-top: 50px; /* Adds space between this section and the one before it */
+  top: 5rem;
+}
+#why-learn {
+  margin-top: 50px; /* Adds space between this section and the one before it */
+  top: 5rem;
+}
+#About {
+  position: relative;
+  top: 8rem;
+}
+
+#contactus{
+  position: relative;
+  top: 2rem;
+}
+
+@media (max-width: 768px) {
+  #about-2 .img-wrap {
+    text-align: center; /* Center images on smaller screens */
+  }
+
+  #Leadership .card {
+    margin-bottom: 20px; /* Add space between cards on mobile */
+  }
+  
+
+}
+
+
+.navbar-brand div {
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.navbar-brand {
+  font-size: 1rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+  .navbar-brand div {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+  }
 }
