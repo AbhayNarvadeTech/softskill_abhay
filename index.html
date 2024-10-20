@@ -20,7 +20,7 @@
     rel="stylesheet">
 
   <!-- font end -->
-   
+
 
 
   <!-- floting whatsapp icon -->
@@ -29,6 +29,9 @@
     crossorigin="anonymous"></script>
   <script src="Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.js"></script>
 
+  <!-- For scroll trigger  -->
+
+  <script src="css-scroll-on-reveal/js/ScrollOnReveal.js"></script>
 
 
 </head>
@@ -65,8 +68,8 @@
       </div>
     </div>
   </nav>
-  
-  
+
+
 
   <div class="container-fluid banner" id="about-banner">
     <div class="text-wrapper">
@@ -75,7 +78,7 @@
     </div>
   </div>
 
-  <div class="container my-5" id="whyshould">
+  <div class="container my-5 fading" id="whyshould">
     <div class="row justify-content-center mb-4">
       <div class="col-12 text-center">
         <div class="section-title mb-4 pb-2">
@@ -135,12 +138,12 @@
   </div>
 
 
-  <section class="container py-5 mt-2 mt-sm-3 mt-md-4" id="Teamwork">
+  <section class="container py-5 mt-2 mt-sm-3 mt-md-4 fading" id="Teamwork">
     <h2 class="title mb-3 text-center text-primary">Frequently asked questions (FAQs)</h2>
     <p class="pb-3 pb-md-4 mb-0 mb-sm-2 mb-lg-3 text-center">
       Regarding soft skills along with their answers
     </p>
-  
+
     <div class="row align-items-lg-center">
       <!-- Accordion Section -->
       <div class="col-md-6 col-lg-5 pb-2 pb-lg-0 mb-4 mb-md-0">
@@ -161,7 +164,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="accordion-item mb-3">
             <h3 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -178,7 +181,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="accordion-item mb-3">
             <h3 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -195,7 +198,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="accordion-item mb-3">
             <h3 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -214,7 +217,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Binded Images Section -->
       <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1 d-none d-md-block"> <!-- Added d-none d-md-block -->
         <div class="ps-lg-4 ps-xl-0">
@@ -236,12 +239,9 @@
       </div>
     </div>
   </section>
-  
 
 
-
-
-  <div class="container " id="Testimonials">
+  <div class="container fading mt-2" id="Testimonials">
     <div class="row mb-8 justify-content-center">
       <div class="col-lg-8 col-md-12 col-12 text-center">
         <!-- caption -->
@@ -429,9 +429,9 @@
     </div>
   </div>
 
-  <div class="container mb-2">
+  <div class="container fading mb-2">
     <div class="text-center mb-2-8 mb-lg-6">
-    
+
 
       <h2 class="title mb-3 text-center text-primary">Why choose Us</h2>
 
@@ -445,15 +445,17 @@
               <i class="fas fa-user-graduate rounded-circle"></i>
             </div>
             <h4 class="sub-info">Qualified Instructors</h4>
-            <p class="display-30 mb-0">Our instructors are highly qualified and experienced in their fields, providing quality education.</p>
+            <p class="display-30 mb-0">Our instructors are highly qualified and experienced in their fields, providing
+              quality education.</p>
           </div>
           <div class="text-center text-sm-right">
             <div class="mb-4">
-            
+
               <i class="fas fa-book-open rounded-circle"></i>
             </div>
             <h4 class="sub-info">Comprehensive Curriculum</h4>
-            <p class="display-30 mb-0">We offer a comprehensive curriculum designed to meet the needs of all students.</p>
+            <p class="display-30 mb-0">We offer a comprehensive curriculum designed to meet the needs of all students.
+            </p>
           </div>
         </div>
       </div>
@@ -469,9 +471,10 @@
               <i class="fas fa-user-edit rounded-circle"></i>
             </div>
             <h4 class="sub-info">Personalized Learning</h4>
-            <p class="display-30 mb-0">We provide personalized learning experiences tailored to each student's needs.</p>
+            <p class="display-30 mb-0">We provide personalized learning experiences tailored to each student's needs.
+            </p>
           </div>
-  
+
           <div class="text-center text-sm-left">
             <div class="mb-4">
               <i class="fas fa-briefcase rounded-circle"></i>
@@ -483,8 +486,8 @@
       </div>
     </div>
   </div>
-  
-  <div class="container-fluid" id="About">
+
+  <div class="container-fluid fading" id="About">
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark" style="background-color: #eceff1">
       <!-- Section: Social media -->
@@ -658,6 +661,45 @@
           }
         });
       });
+    });
+  </script>
+
+  <!-- For scroll -->
+  <script>
+    $(function () {
+      $(".fading").ScrollOnReveal();
+    });
+
+    $(".fading").ScrollOnReveal({
+      beforeCss: {
+        transform: "translateY(0)",
+      },
+      animatedCss: {
+        transform: "translateY(25px)",
+      },
+    });
+
+
+    $('.fading').ScrollOnReveal({
+
+      // detect scroll events in this container
+      container: $(window),
+
+      // animation speed
+      speed: 1000,
+
+      // reset the animation when the element enters the viewport again
+      reset: true,
+
+      // animation delay
+      delay: 80,
+
+      // offset in px
+      viewFactor: 20,
+
+      // extra easing functions
+      easing: 'ease-in-out',
+
     });
   </script>
 </body>

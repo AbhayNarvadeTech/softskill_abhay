@@ -29,6 +29,10 @@
   <script src="/Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.js"></script>
 
 
+   <!-- For scroll trigger  -->
+
+   <script src="/css-scroll-on-reveal/js/ScrollOnReveal.js"></script>
+
 
 </head>
 
@@ -66,7 +70,7 @@
 
 
   <!-- contact -->
-  <section class="container-fluid bg-dark mt-5" id="contactus">
+  <section class="container-fluid bg-dark mt-5 " id="contactus">
     <div class="container">
       <div class="row g-4 g-xxl-5">
         <div class="col-xl-9 mx-auto my-5">
@@ -128,7 +132,7 @@
 
 
 
-  <div class="container-fluid">
+  <div class="container-fluid mt-2 fading">
     <div class="row justify-content-center">
       <div class="col-md-12">
         <iframe
@@ -144,7 +148,7 @@
 
 
 
-  <div class="container-fluid" id="About">
+  <div class="container-fluid fading" id="About">
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark" style="background-color: #eceff1">
       <!-- Section: Social media -->
@@ -320,6 +324,45 @@
       });
     });
   </script>
+
+    <!-- For scroll -->
+    <script>
+      $(function () {
+        $(".fading").ScrollOnReveal();
+      });
+  
+      $(".fading").ScrollOnReveal({
+        beforeCss: {
+          transform: "translateY(0)",
+        },
+        animatedCss: {
+          transform: "translateY(25px)",
+        },
+      });
+  
+  
+      $('.fading').ScrollOnReveal({
+  
+        // detect scroll events in this container
+        container: $(window),
+  
+        // animation speed
+        speed: 1000,
+  
+        // reset the animation when the element enters the viewport again
+        reset: true,
+  
+        // animation delay
+        delay: 80,
+  
+        // offset in px
+        viewFactor: 20,
+  
+        // extra easing functions
+        easing: 'ease-in-out',
+  
+      });
+    </script>
 </body>
 
 </html>
