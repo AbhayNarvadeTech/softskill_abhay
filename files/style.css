@@ -288,7 +288,7 @@ li {
   height: fit-content;
 }
 .carousel-item {
-    height: 30rem;
+  height: 30rem;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -299,29 +299,30 @@ li {
   height: fit-content;
 }
 
-body{margin-top:20px;}
+body {
+  margin-top: 20px;
+}
 .rounded-circle {
-    border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
-.sub-info{
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    color: #004975;
+.sub-info {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #004975;
 }
 
 .display-30 {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .rounded-circle {
-    font-size: xx-large;
-    
+  font-size: xx-large;
 }
 
 #about-2 {
@@ -341,10 +342,10 @@ img {
 }
 #About {
   position: relative;
-  top: 8rem;
+  /* top: 8rem; */
 }
 
-#contactus{
+#contactus {
   position: relative;
   top: 2rem;
 }
@@ -357,10 +358,7 @@ img {
   #Leadership .card {
     margin-bottom: 20px; /* Add space between cards on mobile */
   }
-  
-
 }
-
 
 .navbar-brand div {
   line-height: 1.2; /* Adjust line height for better spacing */
@@ -372,6 +370,19 @@ img {
 
 @media (max-width: 768px) {
   .navbar-brand div {
-      font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 0.9rem; /* Smaller font size for mobile */
   }
 }
+
+#why-learn {
+  margin-bottom: 150px; /* Adjust the value to add more space */
+  padding-bottom: 50px;
+}
+
+#skills {
+  margin-top: 50px; /* Adjust the value to control the space at the top */
+  padding: 50px;
+}
+
+
+
