@@ -360,16 +360,16 @@ img {
   }
 }
 
-.navbar-brand div {
+.navbar-brand  {
   line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 .navbar-brand {
-  font-size: 1rem; /* Default font size */
+  font-size: 1.2rem; /* Default font size */
 }
 
 @media (max-width: 768px) {
-  .navbar-brand div {
+  .navbar-brand  {
     font-size: 0.9rem; /* Smaller font size for mobile */
   }
 }
