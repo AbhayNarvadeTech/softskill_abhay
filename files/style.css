@@ -288,7 +288,7 @@ li {
   height: fit-content;
 }
 .carousel-item {
-  height: 30rem;
+  height: fit-content;
 }
 .carousel-control-prev,
 .carousel-control-next {
