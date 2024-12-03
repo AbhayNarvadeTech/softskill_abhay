@@ -359,8 +359,13 @@ img {
     margin-bottom: 20px; /* Add space between cards on mobile */
   }
 }
+@media (max-width: 587px) {
+  .navbar-brand span {
+    width: 13rem;
+  }
+}
 
-.navbar-brand  {
+.navbar-brand {
   line-height: 1.2; /* Adjust line height for better spacing */
 }
 
@@ -368,10 +373,9 @@ img {
   font-size: 1.2rem; /* Default font size */
 }
 
-@media (max-width: 768px) {
-  .navbar-brand  {
-    font-size: 0.9rem; /* Smaller font size for mobile */
-  }
+.navbar-brand span {
+  white-space: normal; /* Allow wrapping */
+  word-break: break-word; /* Break long words if needed */
 }
 
 #why-learn {
@@ -383,6 +387,3 @@ img {
   margin-top: 50px; /* Adjust the value to control the space at the top */
   padding: 50px;
 }
-
-
-
