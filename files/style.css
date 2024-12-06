@@ -1,7 +1,5 @@
 * {
-  transition: all 0.5s ease;
   font-family: "Poppins", sans-serif;
-  /* Adjusted for faster transitions */
 }
 
 /* General body styling */
@@ -13,6 +11,14 @@ body {
 
 .navbar {
   background-color: #e9ecef;
+}
+
+.navbar a,
+.navbar li,
+.plan-card,
+.testimonial-card,
+.features div {
+  transition: all 0.5s ease;
 }
 
 .navbar a {
@@ -189,14 +195,9 @@ li {
   text-decoration: none !important;
   color: #e9ecef;
 }
-#cardform {
-  position: relative;
-  transform: translateY(-50px);
-}
 
-#cardform a {
-  text-decoration: none;
-}
+
+
 .card {
   transition: transform 0.3s ease;
 }

@@ -1,326 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillBoost Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkillBoost Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
+    <!-- For font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- For font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <!-- font end -->
 
-  <!-- font end -->
+    <!-- floting whatsapp icon -->
+    <link
+      rel="stylesheet"
+      href="/Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.css"
+    />
 
-  <!-- floting whatsapp icon -->
-  <link rel="stylesheet" href="/Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
-  <script src="/Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Floating-WhatsApp-Message-Button-jQuery (2)/floating-wpp.min.js"></script>
 
-  <!-- For scroll trigger  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-  <script src="/css-scroll-on-reveal/js/ScrollOnReveal.js"></script>
-</head>
+    <!-- For scroll trigger  -->
 
-<body>
-  <!-- Loader -->
-  <div id="loader" class="loader"></div>
-  <div class="floating-wpp"></div>
+    <script src="/css-scroll-on-reveal/js/ScrollOnReveal.js"></script>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+    <div class="floating-wpp"></div>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../img/logo.png" alt="Logo" class="me-2" style="width: 89px; height: auto" />
-        <span class="text-wrap">
-          Drushti Training and Consultancy Service
-        </span>
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img
+            src="../img/logo.png"
+            alt="Logo"
+            class="me-2"
+            style="width: 89px; height: auto"
+          />
+          <span class="text-wrap">
+            Drushti Training and Consultancy Service
+          </span>
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link mx-1 p-2 " href="../index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-1 p-2" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-1 p-2 active" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-1 p-2" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1 p-2" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1 p-2 active" href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <div class="row" style="padding-top: 100px">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center">
+          Thank you for your interest in Drushti Training and Consultancy
+          Services. We are here to assist you with any inquiries or provide
+          information about our transformative training programs.
+        </p>
+      </div>
 
-  <!-- contact -->
-  <section class="container-fluid bg-dark mt-5" id="contactus">
-    <div class="container">
-      <div class="row g-4 g-xxl-5">
-        <div class="col-xl-9 mx-auto my-5">
-          <!-- Image -->
-          <img src="../img/Contact_us.webp" class="rounded img-fluid" alt="contact-bg" />
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3>Contact Form</h3>
+          <p>Fill out the form below or email us directly:</p>
+          <form action="https://formspree.io/f/xanywqpq" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="phone" name="Phone" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="Message"
+                rows="4"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
 
-          <!-- Contact form START -->
-          <div class="row mt-n5 mt-sm-n7 mt-md-n8">
-            <div class="col-11 col-lg-9 mx-auto">
-              <div class="card shadow p-4 p-sm-5 p-md-6" id="cardform">
-                <!-- Card header -->
-                <div class="border-bottom px-0 pt-0 pb-5">
-                  <!-- Breadcrumb -->
-                  <p class="lead">
-                    Enroll with Drushti Training and Consultancy Services.
-                    We're here to guide you every step of the way.
-                  </p>
-                  <!-- Title -->
-                  <h1 class="mb-3 h3">Contact Us</h1>
+        <div class="col-md-6">
+          <h3>Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid fading" id="About">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-dark"
+        style="background-color: #eceff1"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center p-4 text-white"
+          style="background-color: #21d192"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3 justify-content-around">
+              <!-- First Column: Social Icons -->
+              <div class="col-md-4 col-lg-6 col-xl-6 mb-4">
+                <h6 class="text-uppercase text-center fw-bold">Follow Us</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 100%; background-color: #7c4dff; height: 2px"
+                />
+                <div class="d-flex justify-content-center gap-4">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="text-decoration-none"
+                    style="color: #3b5998"
+                  >
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    class="text-decoration-none"
+                    style="color: #db4a39"
+                  >
+                    <i class="fab fa-google fa-2x"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    class="text-decoration-none"
+                    style="color: #0e76a8"
+                  >
+                    <i class="fab fa-linkedin fa-2x"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    class="text-decoration-none"
+                    style="color: #e4405f"
+                  >
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
                 </div>
-                <!-- Card body & form -->
-                <form class="card-body px-0 pb-0 pt-3" action="https://formspree.io/f/xanywqpq" method="POST">
-                  <!-- Name -->
-                  <div class="input-floating-label form-floating mb-4">
-                    <input type="text" class="form-control bg-transparent" id="floatingName" name="Name"
-                      placeholder="Password" />
-                    <label for="floatingName">Your name</label>
-                  </div>
-                  <!-- Email -->
-                  <div class="input-floating-label form-floating mb-4">
-                    <input type="email" class="form-control bg-transparent" id="floatingInput"
-                      placeholder="name@example.com" name="Email" />
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <!-- Number -->
-                  <div class="input-floating-label form-floating mb-4">
-                    <input type="text" class="form-control bg-transparent" id="floatingNumber" placeholder="Password"
-                      name="Mobile_Number" />
-                    <label for="floatingNumber">Phone number</label>
-                  </div>
-                  <!-- Message -->
-                  <div class="input-floating-label form-floating mb-4">
-                    <textarea class="form-control bg-transparent" placeholder="Leave a comment here"
-                      id="floatingTextarea2" style="height: 100px" name="Message"></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                  </div>
-                  <!-- Button -->
-                  <button class="btn btn-lg btn-primary mb-0" type="submit">
-                    Send a message
-                  </button>
-                </form>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Second Column: Contact Information -->
+              <div class="col-md-4 col-lg-6 col-xl-6 mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 100%; background-color: #7c4dff; height: 2px"
+                />
+                <p>
+                  <i class="fas fa-home mr-3"></i> 2/25, Gopinath Nagar, Near
+                  Gandhi Bhavan, Kothrud, Pune - 38
+                </p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i>
+                  <a
+                    href="mailto:drushtitraining@gmail.com"
+                    style="text-decoration: none"
+                    >drushtitraining@gmail.com</a
+                  >
+                </p>
+                <p><i class="fas fa-phone mr-3"></i> 8484855376</p>
               </div>
             </div>
           </div>
-          <!-- Contact form END -->
-        </div>
-      </div>
-      <!-- Row END -->
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="">SkillBoost.com</a>
+    </div> -->
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
     </div>
-  </section>
 
-  <div class="container-fluid mt-2 fading mb-2">
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15138.0505840988!2d73.8361917!3d18.4604241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2958914652d5d%3A0x7d50f74a855d952a!2sVR%20Automation!5e0!3m2!1sen!2sin!4v1680958972900!5m2!1sen!2sin"
-          style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="450"
-          class="container-fluid mt-5"></iframe>
-      </div>
-    </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none"; // Hide loader when page is fully loaded
+      });
 
-  <div class="container-fluid fading" id="About">
-    <!-- Footer -->
-    <footer class="text-center text-lg-start text-dark" style="background-color: #eceff1">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center p-4 text-white" style="background-color: #21d192">
-        <!-- Left -->
-        <div class="me-5">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-      </section>
-      <!-- Section: Social media -->
+      // for floting whatsapp button
 
-      <!-- Section: Links  -->
-      <section>
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3 justify-content-around">
-            <!-- First Column: Social Icons -->
-            <div class="col-md-4 col-lg-6 col-xl-6 mb-4">
-              <h6 class="text-uppercase text-center fw-bold">Follow Us</h6>
-              <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 100%; background-color: #7c4dff; height: 2px" />
-              <div class="d-flex justify-content-center gap-4">
-                <a href="https://www.facebook.com" target="_blank" class="text-decoration-none" style="color: #3b5998">
-                  <i class="fab fa-facebook fa-2x"></i>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="text-decoration-none" style="color: #db4a39">
-                  <i class="fab fa-google fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" class="text-decoration-none" style="color: #0e76a8">
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="text-decoration-none" style="color: #e4405f">
-                  <i class="fab fa-instagram fa-2x"></i>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column -->
+      $(".floating-wpp").floatingWhatsApp({
+        // phone number
+        phone: "+918208483949",
 
-            <!-- Second Column: Contact Information -->
-            <div class="col-md-4 col-lg-6 col-xl-6 mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold">Contact</h6>
-              <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 100%; background-color: #7c4dff; height: 2px" />
-              <p>
-                <i class="fas fa-home mr-3"></i> 2/25, Gopinath Nagar, Near
-                Gandhi Bhavan, Kothrud, Pune - 38
-              </p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i>
-                <a href="mailto:drushtitraining@gmail.com" style="text-decoration: none">drushtitraining@gmail.com</a>
-              </p>
-              <p><i class="fas fa-phone mr-3"></i> 8484855376</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        // message to send
+        message: "",
 
-      <!-- Copyright -->
-      <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-dark" href="">SkillBoost.com</a>
-      </div> -->
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-  </div>
-  <!-- End of .container -->
+        // icon size
+        size: "72px",
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        // background color
+        backgroundColor: "#25D366",
 
-  <script>
-    window.addEventListener("load", function () {
-      const loader = document.getElementById("loader");
-      loader.style.display = "none"; // Hide loader when page is fully loaded
-    });
+        // or right
+        position: "right",
 
-    // for floting whatsapp button
+        // message in popup
+        popupMessage: "",
 
-    $(".floating-wpp").floatingWhatsApp({
-      // phone number
-      phone: "+918208483949",
+        // show a chat popup on hover
+        showPopup: false,
 
-      // message to send
-      message: "",
+        // show on IE
+        showOnIE: true,
 
-      // icon size
-      size: "72px",
+        // in milliseconds
+        autoOpenTimer: 0,
 
-      // background color
-      backgroundColor: "#25D366",
+        // header color
+        headerColor: "#128C7E",
 
-      // or right
-      position: "right",
+        // header title
+        headerTitle: "",
 
-      // message in popup
-      popupMessage: "",
+        // z-index property
+        zIndex: 99,
 
-      // show a chat popup on hover
-      showPopup: false,
+        // custom icon
+        buttonImage:
+          '<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 800 800" width="800" height="800"><defs><clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ"><rect width="800" height="800"/></clipPath></defs><g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)"><g><path d=" M 787.59 800 L 12.41 800 C 5.556 800 0 793.332 0 785.108 L 0 14.892 C 0 6.667 5.556 0 12.41 0 L 787.59 0 C 794.444 0 800 6.667 800 14.892 L 800 785.108 C 800 793.332 794.444 800 787.59 800 Z " fill="rgb(37,211,102)"/></g><g><path d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565" fill-rule="evenodd" fill="rgb(255,255,255)"/></g></g></svg>',
+      });
+    </script>
 
-      // show on IE
-      showOnIE: true,
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionButtons = document.querySelectorAll(".accordion-button");
+        const bindedItems = document.querySelectorAll(".binded-item");
 
-      // in milliseconds
-      autoOpenTimer: 0,
+        accordionButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove 'active' class from all binded images
+            bindedItems.forEach((item) => {
+              item.classList.remove("active");
+            });
 
-      // header color
-      headerColor: "#128C7E",
-
-      // header title
-      headerTitle: "",
-
-      // z-index property
-      zIndex: 99,
-
-      // custom icon
-      buttonImage:
-        '<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 800 800" width="800" height="800"><defs><clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ"><rect width="800" height="800"/></clipPath></defs><g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)"><g><path d=" M 787.59 800 L 12.41 800 C 5.556 800 0 793.332 0 785.108 L 0 14.892 C 0 6.667 5.556 0 12.41 0 L 787.59 0 C 794.444 0 800 6.667 800 14.892 L 800 785.108 C 800 793.332 794.444 800 787.59 800 Z " fill="rgb(37,211,102)"/></g><g><path d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565" fill-rule="evenodd" fill="rgb(255,255,255)"/></g></g></svg>',
-    });
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const accordionButtons = document.querySelectorAll(".accordion-button");
-      const bindedItems = document.querySelectorAll(".binded-item");
-
-      accordionButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          // Remove 'active' class from all binded images
-          bindedItems.forEach((item) => {
-            item.classList.remove("active");
+            // Add 'active' class to the relevant image based on data-binded-content attribute
+            const targetId = this.getAttribute("data-binded-content");
+            const targetItem = document.querySelector(targetId);
+            if (targetItem) {
+              targetItem.classList.add("active");
+            }
           });
-
-          // Add 'active' class to the relevant image based on data-binded-content attribute
-          const targetId = this.getAttribute("data-binded-content");
-          const targetItem = document.querySelector(targetId);
-          if (targetItem) {
-            targetItem.classList.add("active");
-          }
         });
       });
-    });
-  </script>
+    </script>
 
-  <!-- For scroll -->
-  <script>
-    $(function () {
-      $(".fading").ScrollOnReveal();
-    });
+    <!-- For scroll -->
+    <script>
+      $(function () {
+        $(".fading").ScrollOnReveal();
+      });
 
-    $(".fading").ScrollOnReveal({
-      beforeCss: {
-        transform: "translateY(0)",
-      },
-      animatedCss: {
-        transform: "translateY(25px)",
-      },
-    });
+      $(".fading").ScrollOnReveal({
+        beforeCss: {
+          transform: "translateY(0)",
+        },
+        animatedCss: {
+          transform: "translateY(25px)",
+        },
+      });
 
-    $(".fading").ScrollOnReveal({
-      // detect scroll events in this container
-      container: $(window),
+      $(".fading").ScrollOnReveal({
+        // detect scroll events in this container
+        container: $(window),
 
-      // animation speed
-      speed: 1000,
+        // animation speed
+        speed: 1000,
 
-      // reset the animation when the element enters the viewport again
-      reset: true,
+        // reset the animation when the element enters the viewport again
+        reset: true,
 
-      // animation delay
-      delay: 80,
+        // animation delay
+        delay: 80,
 
-      // offset in px
-      viewFactor: 20,
+        // offset in px
+        viewFactor: 20,
 
-      // extra easing functions
-      easing: "ease-in-out",
-    });
-  </script>
-</body>
-
+        // extra easing functions
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
 </html>
